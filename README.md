@@ -59,8 +59,7 @@ moka.payments
       BuyerFullName: "John Doe",
       BuyerGsmNumber: "5551110022",
       BuyerEmail: "email@email.com",
-      BuyerAddress:
-        "Levent Mah. Meltem Sok. İş Kuleleri Kule 2 No: 10 / 4 Beşiktaş / İstanbul",
+      BuyerAddress: "Levent Mah. Meltem Sok. İş Kuleleri Kule 2 No: 10 / 4 Beşiktaş / İstanbul",
     },
   })
   .then((res) => console.log(res.data))
