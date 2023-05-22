@@ -34,13 +34,70 @@ var moka = new MokaClient({
   password: "",
   baseUrl: "https://service.refmoka.com",
 });
-
-moka.binNumber
-  .retrieve({
-    BinNumber: 526911,
+moka.payments
+  .create({
+    CardHolderFullName: "John Doe",
+    CardNumber: "5127541122223332",
+    ExpMonth: "12",
+    ExpYear: "2025",
+    CvcNumber: "123",
+    CardToken: "",
+    Amount: 0.01,
+    Currency: "TL",
+    InstallmentNumber: 1,
+    ClientIP: "192.168.1.116",
+    OtherTrxCode: "20210114170108",
+    SubMerchantName: "",
+    IsPoolPayment: 0,
+    IsTokenized: 0,
+    IntegratorId: 0,
+    Software: "Software",
+    Description: "",
+    IsPreAuth: 0,
+    BuyerInformation: {
+      BuyerFullName: "John Doe",
+      BuyerGsmNumber: "5551110022",
+      BuyerEmail: "email@email.com",
+      BuyerAddress:
+        "Levent Mah. Meltem Sok. İş Kuleleri Kule 2 No: 10 / 4 Beşiktaş / İstanbul",
+    },
   })
   .then((res) => console.log(res.data))
   .catch((error) => console.error(error));
+
+moka.binNumber
+  .retrieve({
+    BinNumber: 512754,
+  })
+  .then((res) => console.log(res.data))
+  .catch((error) => console.error(error));
+
+moka.transactions
+  .all({
+    TrxStartDate: "2023-05-23 00:00",
+    TrxEndDate: "2023-05-23 01:00",
+    TrxType: 2,
+    TrxStatus: 1,
+  })
+  .then((res) => console.log(res.data))
+  .catch((error) => console.error(error));
+
+// Resources
+// moka.binNumber
+// moka.payments
+// moka.transactions
+// moka.cards
+// moka.customers
+// moka.dealers
+// moka.paymentLinks
+// moka.paymentPlans
+// moka.products
+// moka.refunds
+// moka.reporting
+// moka.sales
+// moka.schedules
+
+// You can see all resources in lib/resources folder
 ```
 
 ## Test Cards
