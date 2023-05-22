@@ -8,7 +8,7 @@ The Moka API NodeJS Client provides convenient access to the [Moka API](https://
 
 Node 12 or higher.
 
-# SSL / TLS
+## SSL / TLS
 PCI-DSS rules only allow the use of TLS 1.2 and above protocols. Please ensure that your application POST to Moka URL over these protocols. Otherwise, errors such as 'Connection will be closed or Connection Closed' will be received.
 
 ## Documentation
