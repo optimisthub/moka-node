@@ -1,13 +1,14 @@
 {
   "name": "moka-client",
   "version": "1.0.0",
-  "description": "Moka API NodeJS Client",
+  "description": "Moka United API NodeJS Client",
   "main": "lib/moka.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "moka",
+    "moka united",
     "moka.com",
     "moka node.js",
     "moka api",

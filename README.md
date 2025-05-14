@@ -1,6 +1,6 @@
-# Moka API NodeJS Client
+# Moka United API NodeJS Client
 
-The Moka API NodeJS Client provides convenient access to the [Moka API](https://developer.moka.com/) from applications written in the NodeJS.
+The Moka United API NodeJS Client provides convenient access to the [Moka United API](https://developer.mokaunited.com/) from applications written in the NodeJS.
 
 ![image](https://optimisthub.com/cdn/moka/moka-node.js-api-client-cover-github.png)
 
@@ -9,11 +9,11 @@ The Moka API NodeJS Client provides convenient access to the [Moka API](https://
 Node 12 or higher.
 
 ## SSL / TLS
-PCI-DSS rules only allow the use of TLS 1.2 and above protocols. Please ensure that your application POST to Moka URL over these protocols. Otherwise, errors such as 'Connection will be closed or Connection Closed' will be received.
+PCI-DSS rules only allow the use of TLS 1.2 and above protocols. Please ensure that your application POST to Moka United URL over these protocols. Otherwise, errors such as 'Connection will be closed or Connection Closed' will be received.
 
 ## Documentation
 
-See the [Moka API docs](https://developer.moka.com).
+See the [Moka United API docs](https://developer.mokaunited.com).
 
 ## Installation
 
@@ -102,4 +102,4 @@ moka.transactions
 
 ## Test Cards
 
-See the [Test Cards](https://developer.moka.com/home.php?page=test-kartlari).
+See the [Test Cards](https://developer.mokaunited.com/home.php?page=test-kartlari).
