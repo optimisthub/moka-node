@@ -1,10 +1,12 @@
 var Moka = require("./lib/Moka");
 
+// Kimlik bilgileri kaynak kodda tutulmaz; ortam degiskenlerinden okunur.
+//   MOKA_DEALER_CODE, MOKA_USERNAME, MOKA_PASSWORD
 var moka = new Moka({
-  dealerCode: "1731",
-  username: "***REMOVED***",
-  password: "***REMOVED***",
-  baseUrl: "https://service.refmoka.com",
+  dealerCode: process.env.MOKA_DEALER_CODE || "",
+  username: process.env.MOKA_USERNAME || "",
+  password: process.env.MOKA_PASSWORD || "",
+  baseUrl: process.env.MOKA_BASE_URL || "https://service.refmoka.com",
 });
 
 // var res = moka.binNumber.retrieve({
