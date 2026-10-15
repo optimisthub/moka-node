@@ -2,7 +2,7 @@
 
 The Moka United API NodeJS Client provides convenient access to the [Moka United API](https://developer.mokaunited.com/) from applications written in the NodeJS.
 
-![image](https://optimisthub.com/cdn/moka/moka-node.js-api-client-cover-github.png)
+![Moka United API NodeJS Client](.github/assets/github-cover.png)
 
 ## Requirements
 
